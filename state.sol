@@ -17,8 +17,9 @@ contract Local{
     //local variable : data store in  stack storage;
     // for string alsway store in contract level; and it has default has memory. if you want to use inside function then use memory key word;
     // memory key word can not use contract level. 
+    string name = "chandan"; // state variable
     function store() pure public returns(uint){
-        uint age = 20;
+        uint age = 20; // local variable
         return age;
     }
 }

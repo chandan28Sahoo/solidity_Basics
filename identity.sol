@@ -9,13 +9,13 @@ contract Identity{
         name = "Chandan";
         age = 17;
     }
-    function getName() view public returns(string memory){
+    function getName() public view returns(string memory){
         return name;
     }
-    function getAge() view public returns(uint){
+    function getAge() public view returns(uint){
         return age;
     }
-    function setAge() public{
-        age = age + 1;
+    function setAge(uint newAge) public{
+        age = newAge;
     }
 }
