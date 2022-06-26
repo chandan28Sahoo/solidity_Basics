@@ -19,6 +19,7 @@ contract Local{
     // memory key word can not use contract level. 
     string name = "chandan"; // state variable
     function store() pure public returns(uint){
+        // string memory name = "chandan";
         uint age = 20; // local variable
         return age;
     }

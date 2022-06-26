@@ -13,7 +13,7 @@ contract ViewVsPure{
         return name;
     }
     // pure used to set value in getter function with new variable
-    // we cannot change set value for state variable
+    // we cannot read or write value for state variable
     function getAge() public pure returns(uint){
         uint roll = 23;
         return roll;
@@ -23,7 +23,7 @@ contract ViewVsPure{
         age = newAge;
     }
 }
-
+/*
 /// @title A simulator for trees
 /// @author Larry A. Gardner
 /// @notice You can use this contract for only the most basic simulation
@@ -62,3 +62,4 @@ contract KumquatTree is Tree, Plant {
         return 3;
     }
 }
+*/
